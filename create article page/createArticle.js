@@ -22,8 +22,8 @@ addImage.addEventListener('click', () => {
     fileInput.click()
 })
 
+let clickCounter = 0;
 fileInput.addEventListener('change', function() {
-    let clickCounter = 0;
     clickCounter++;
     if(clickCounter === 1){
         let file = this.files[0];
